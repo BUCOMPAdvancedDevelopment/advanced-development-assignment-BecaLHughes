@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="starter-template">
+ <h1>Register your account </h1>
+ <p class="lead">Please fill in your information </i></p>
+</div>
+<div id="main">
+ <form method="post" action="{{ url_for('submitted_form') }}">
+ <label for="name">Name:</label>
+ <input type="text" name="name"><br />
+ <label for="email">Email address:</label>
+ <input type="email" name="email"><br />
+ <label for="password">Password:</label>
+ <input type="password" name="password"><br />
+ <label for="confirm_password">Confirm Password:</label>
+ <input type="password" name="confirm_password"><br />
+ <p>Your password needs to contain the following:
+     <br /> -One uppercase letter
+     <br /> -One lowercase letter
+     <br /> -One number
+ </p>
+ <input type="submit">
+ <p style="color: red;">
+     {{error}} <br>
+    </p>
+ </form>
+ </div>
+{% endblock %} 

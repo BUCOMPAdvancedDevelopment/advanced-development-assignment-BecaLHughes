@@ -1,0 +1,20 @@
+body {
+    padding-top: 5rem;
+   }
+
+   h1 {
+       font-size:3em;
+       text-align: center;
+       padding: 3rem;
+   }
+   p {
+    font-size: 1.2em;
+   }
+   .starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+   }
+
+   .container {
+       padding:3px 3px;
+   }
