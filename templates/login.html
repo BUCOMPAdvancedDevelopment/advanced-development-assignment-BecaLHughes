@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% set active_page = "login" %}
+{% block content %}
+<div class="starter-template">
+ <h1>Log into your account </h1>
+ <p class="lead">Please fill in your information </i></p>
+</div>
+<div id="main">
+ <form method="post" action="{{ url_for('account') }}">
+ <label for="username">Username:</label>
+ <input type="text" name="username"><br />
+ <label for="password">Password:</label>
+ <input type="password" name="password"><br />
+ <input type="submit">
+ <p style="color: red;">
+     {{error}} <br>
+    </p>
+ </form>
+ <div class="g-signin2" data-onsuccess="onSignIn"></div>
+ </div>
+{% endblock %} 
